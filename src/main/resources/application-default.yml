@@ -1,0 +1,13 @@
+logging:
+  level:
+    root: WARN
+    "com.suntong": DEBUG
+  logging: 
+    pattern:
+      console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+spring:
+  devtools:
+    restart:
+      enabled: mysecret
+server:
+  port: 8081
