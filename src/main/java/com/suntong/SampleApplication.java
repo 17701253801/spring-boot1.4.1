@@ -11,7 +11,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
  * 启动程序
  * @author suntong 
  *
- */
+ */  
 @SpringBootApplication
 @EnableScheduling
 public class SampleApplication implements CommandLineRunner{
