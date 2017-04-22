@@ -9,22 +9,24 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
  * 启动程序
- * @author suntong 
+ * 
+ * @author suntong
  *
- */  
+ */
 @SpringBootApplication
 @EnableScheduling
-public class SampleApplication implements CommandLineRunner{
-	
+public class SampleApplication implements CommandLineRunner {
+
 	private static final Logger LOGGER = LoggerFactory.getLogger(SampleApplication.class);
-	
-	public static void main(String[] args) { 
+
+	public static void main(String[] args) {
 		// 进行热部署操作
 		System.setProperty("spring.devtools.restart.enabled", "true");
 		LOGGER.info("增加了热部署的操作！");
 		SpringApplication.run(SampleApplication.class, args);
 	}
-	@Override 
+
+	@Override
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
 	}

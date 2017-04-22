@@ -5,7 +5,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.stereotype.Component;
 import com.suntong.service.StudentSerivce;
 
 /**
@@ -13,7 +12,7 @@ import com.suntong.service.StudentSerivce;
  * @author suntong
  *
  */
-@Component
+//@Component
 public class ScheduledTasks {
 	/**日志打印*/
 	private static final Logger LOGGER = LoggerFactory.getLogger(ScheduledTasks.class);

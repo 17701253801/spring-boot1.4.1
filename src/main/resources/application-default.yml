@@ -6,6 +6,12 @@ logging:
     pattern:
       console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
 spring:
+  
+  mvc:
+    media-types:
+      json: "application/json"
+      xml: "application/xml"
+  
   devtools:
     restart:
       enabled: mysecret
